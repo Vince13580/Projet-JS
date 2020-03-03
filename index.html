@@ -8,18 +8,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+    <!--<script src="main.js"></script>-->
+
     <title>Rated</title>
 </head>
 <body>
 <div class="row">
     <div class="col-9 bg-dark text-white"><h1>RATED !</h1> </div>
-    <div class="col-3 bg-dark text-right"><button type="button" class="btn btn-dark">Login</button></div>
-
+    <div class="col-3 bg-dark text-right"><button type="button" class="btn btn-dark" onclick="connexion()">Login</button></div>
 
 
 </div>
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <a class="navbar-brand" href="#">Menu</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -39,5 +42,7 @@
     </div>
 </nav>
 <br>
+
+<p id="connect"></p>
 </body>
 </html>
