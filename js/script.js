@@ -4,7 +4,6 @@
     $(() => {
         $('#form-login').on('submit', function () {
             $('#messages').fadeOut();
-            console.log('test');
             $.ajax({
                 url: $(this).attr('action'),
                 method: $(this).attr('method'),
