@@ -1,4 +1,3 @@
-
 (function () {
     'use strict';
     $(() => {
@@ -10,8 +9,7 @@
                 data: $(this).serialize()
             }).done(function (data) {
                 if (data.success === true) {
-                    window.location.href = '/';
-
+                    window.location.assign('/');
                 } else {
                     $('#messages').html(data.message).fadeIn();
                 }
@@ -20,5 +18,5 @@
             });
             return false;
         })
-   })
+    })
 })();
