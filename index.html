@@ -3,46 +3,79 @@
 <head>
     <meta charset="utf-8">
     <title>Rated</title>
+    <link rel="icon" href="html/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="/public/style.css">
+    <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/main.js"></script>
-
+    <script src="/js/lightbox.js"></script>
 
 </head>
 <body>
+<div class="container-fluid.banner">
 <div class="row">
-    <div class="col-9 bg-dark text-white"><h1>RATED !</h1></div>
-    <div class="col-3 bg-dark text-white" id="quit"></div>
-
-
+    <div class="col-lg-9 col-sm-5  text-white"><h1>RATED !</h1></div>
+    <div class="col-lg-3 col-sm-3 text-white text-right" id="quit"></div>
 </div>
-
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">Menu</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Films</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Séries</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Jeux</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+</div>
 <br>
 
 
+<div class="container">
+    <div class="row">
+    <img src="public/106vince.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(1)"alt="106Vince">
+    <img src="public/mx5val.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(2)"alt="mx5Val">
+</div>
+    <div class="row">
+        <img src="public/civicstefen.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(3)" alt="civicStef">
+        <img src="public/mx5Enzo.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(4)" alt="MX5Enzo">
+    </div>
+    <div class="row">
+        <img src="public/500tomy.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(5)" alt="500">
+        <img src="public/mx5Anaïs.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(6)" alt="mx5Anaïs">
+    </div>
+</div>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="public/106vince.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="public/mx5val.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="public/civicstefen.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="public/mx5Enzo.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="public/500tomy.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="public/mx5Anaïs.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </body>
 </html>

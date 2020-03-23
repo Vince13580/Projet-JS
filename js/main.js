@@ -6,7 +6,7 @@
             method: 'get'
         }).done(function (data) {
             if (data.success) {
-                $('body').append(
+                $('#quit').append(
                     $('<button/>')
                         .html('Déconnexion')
                         .on('click', function () {
@@ -16,7 +16,7 @@
                             }).done(function () {
                                 window.location.href = '/html/login.html'
                             })
-                        })
+                        }).addClass("btn btn-dark")
                 )
             } else {
                 window.location.href = '/html/login.html'
