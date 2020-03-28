@@ -14,7 +14,16 @@
     <script src="/js/script.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/lightbox.js"></script>
-
+    <script src="/js/caption.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".container img").hover(function(){
+                $(this).css("scale","1.1");
+            }, function(){
+                $(this).css("scale","1");
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="container-fluid.banner">
@@ -28,54 +37,62 @@
 
 <div class="container">
     <div class="row">
+
     <img src="public/106vince.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(1)"alt="106Vince">
+
     <img src="public/mx5val.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(2)"alt="mx5Val">
 </div>
     <div class="row">
+
         <img src="public/civicstefen.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(3)" alt="civicStef">
+
         <img src="public/mx5Enzo.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(4)" alt="MX5Enzo">
     </div>
     <div class="row">
+
         <img src="public/500tomy.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(5)" alt="500">
         <img src="public/mx5Anaïs.jpg" class="col-lg-6 col-xs-4 col-sm-6" onclick="openModal();currentSlide(6)" alt="mx5Anaïs">
     </div>
 </div>
+
+
 <div id="myModal" class="modal">
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
 
-        <div class="mySlides">
-            <div class="numbertext">1 / 6</div>
+        <div class="mySlides voiture1">
+
             <img src="public/106vince.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">2 / 6</div>
+        <div class="mySlides voiture2">
+
             <img src="public/mx5val.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
+        <div class="mySlides voiture3">
+
             <img src="public/civicstefen.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
+        <div class="mySlides voiture4">
+
             <img src="public/mx5Enzo.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
+        <div class="mySlides voiture5">
+
             <img src="public/500tomy.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
+        <div class="mySlides voiture6">
+
             <img src="public/mx5Anaïs.jpg" style="width:100%">
         </div>
 
         <!-- Next/previous controls -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 </body>
 </html>
