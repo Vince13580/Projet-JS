@@ -1,6 +1,7 @@
 (function () {
     'use strict';
     $(() => {
+        $.ajaxSetup({ cache: false });
         $.ajax({
             url: '/json/is_connected.php',
             method: 'get'

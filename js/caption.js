@@ -11,6 +11,33 @@ let makecaption = function f() {
             ).append(
                 $('<p>' + data[key].infos + '</p>')
             ).append(
+                $('<p>' + "note: "+ data[key].note + '</p>')
+            ).append(
+                $('<button id="like">' + "J'aime" + '</button>' ).click(function ()
+                 {
+                     $.ajax({
+                         url: '/json/rate.php',
+                         method: 'post',
+                         data:{
+                             button: "like",
+                             post: key
+                         }
+                     })
+
+                }),
+                $('<button id="dislike">' + "J'aime pas" + '</button>').click(function ()
+                {
+                    $.ajax({
+                        url: '/json/rate.php',
+                        method: 'post',
+                        data:{
+                            button: "dislike",
+                            post: key
+                        }
+                    })
+
+                })
+            ).append(
                 $('<p>' + nbvoiture + ' / 6</p>')
             )
         )
